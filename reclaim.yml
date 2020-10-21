@@ -1,0 +1,16 @@
+---
+- name: Reclaim disk space at VMware
+  hosts: all
+
+  tasks:
+  - name: Datastore disk reclaim space Datastore_06
+    command: esxcli storage vmfs unmap --volume-label=LUN_VMWARE_DATASTORE_06
+
+  - name: Datastore disk reclaim space Datastore_07
+    command: esxcli storage vmfs unmap --volume-label=LUN_VMWARE_DATASTORE_07
+
+  - name: Datastore disk reclaim space Datastore_08
+    command: esxcli storage vmfs unmap --volume-label=LUN_VMWARE_DATASTORE_08
+
+  - name: Datastore disk reclaim space Datastore_16
+    command: esxcli storage vmfs unmap --volume-label=LUN_VMWARE_DATASTORE_16
