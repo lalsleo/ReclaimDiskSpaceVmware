@@ -3,7 +3,7 @@
   hosts: all
 
   tasks:
-  - name: Datastore disk reclaim space Datastore_06
+  - name: Datastore disk reclaim space Datastore_01
     command: esxcli storage vmfs unmap --volume-label=LUN_VMWARE_DATASTORE_01
     
   - name: Datastore disk reclaim space Datastore_06
